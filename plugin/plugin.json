@@ -1,0 +1,18 @@
+{
+  "name": "prompt-forge",
+  "displayName": "Prompt Forge",
+  "version": "1.2.0",
+  "description": "100% offline prompt compiler turning any idea into a token-efficient, phased, source-verified prompt tuned for Claude (including Fable), Gemini, and GPT across Antigravity, coding IDEs, web chat, and APIs.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "JRB",
+    "url": "https://github.com/nefariouskindqt"
+  },
+  "homepage": "https://nefariouskindqt.github.io/prompt-forge/",
+  "repository": "https://github.com/nefariouskindqt/prompt-forge",
+  "suggestedPrompts": [
+    "/prompt Create a web app that makes AI videos and images and verify all sources",
+    "/prompt Write a go-to-market launch plan and demo script for Claude Fable in chat mode",
+    "/prompt Audit our Express API and Firestore rules for OWASP issues with GPT-5"
+  ]
+}

@@ -1,0 +1,182 @@
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-deep: #0f0f10;
+  --bg-page: #141415;
+  --bg-card: #19191b;
+  --bg-raised: #232325;
+  --bg-hover: #2a2a2d;
+
+  --border: rgba(237, 237, 237, 0.08);
+  --border-strong: rgba(237, 237, 237, 0.14);
+  --highlight-top: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  --text-primary: #ededed;
+  --text-secondary: #a1a1a6;
+  --text-muted: #85858b;
+
+  /* Model-family color accents (WCAG AA contrast on dark surfaces) */
+  --family-claude: #f59e0b;
+  --family-claude-soft: rgba(245, 158, 11, 0.14);
+  --family-claude-border: rgba(245, 158, 11, 0.38);
+
+  --family-gemini: #38bdf8;
+  --family-gemini-soft: rgba(56, 189, 248, 0.14);
+  --family-gemini-border: rgba(56, 189, 248, 0.38);
+
+  --family-gpt: #34d399;
+  --family-gpt-soft: rgba(52, 211, 153, 0.14);
+  --family-gpt-border: rgba(52, 211, 153, 0.38);
+
+  --accent: var(--family-claude);
+  --accent-soft: var(--family-claude-soft);
+  --accent-border: var(--family-claude-border);
+
+  --btn-primary-bg: #ededed;
+  --btn-primary-text: #141415;
+  --btn-primary-hover: #ffffff;
+
+  --positive: #4cc38a;
+  --positive-soft: rgba(76, 195, 138, 0.12);
+  --warning: #e5a93c;
+  --warning-soft: rgba(229, 169, 60, 0.12);
+  --negative: #e5484d;
+  --negative-soft: rgba(229, 72, 77, 0.12);
+
+  --syntax-tag: var(--accent);
+  --syntax-heading: var(--accent);
+  --syntax-exit: #4cc38a;
+  --syntax-bullet: #93c5fd;
+
+  --shadow-float: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --bg-deep: #f4f4f5;
+  --bg-page: #fafafa;
+  --bg-card: #ffffff;
+  --bg-raised: #f4f4f5;
+  --bg-hover: #eaeaea;
+
+  --border: rgba(23, 23, 23, 0.09);
+  --border-strong: rgba(23, 23, 23, 0.16);
+  --highlight-top: none;
+
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --text-muted: #6e6e73;
+
+  /* Model-family color accents (WCAG AA contrast on light surfaces) */
+  --family-claude: #b45309;
+  --family-claude-soft: rgba(180, 83, 9, 0.1);
+  --family-claude-border: rgba(180, 83, 9, 0.34);
+
+  --family-gemini: #0369a1;
+  --family-gemini-soft: rgba(3, 105, 161, 0.1);
+  --family-gemini-border: rgba(3, 105, 161, 0.34);
+
+  --family-gpt: #047857;
+  --family-gpt-soft: rgba(4, 120, 87, 0.1);
+  --family-gpt-border: rgba(4, 120, 87, 0.34);
+
+  --accent: var(--family-claude);
+  --accent-soft: var(--family-claude-soft);
+  --accent-border: var(--family-claude-border);
+
+  --btn-primary-bg: #171717;
+  --btn-primary-text: #fafafa;
+  --btn-primary-hover: #2a2a2a;
+
+  --positive: #15803d;
+  --positive-soft: rgba(21, 128, 61, 0.1);
+  --warning: #b45309;
+  --warning-soft: rgba(180, 83, 9, 0.1);
+  --negative: #dc2626;
+  --negative-soft: rgba(220, 38, 38, 0.1);
+
+  --syntax-tag: var(--accent);
+  --syntax-heading: var(--accent);
+  --syntax-exit: #15803d;
+  --syntax-bullet: #1d4ed8;
+
+  --shadow-float: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Dynamic accent shift per selected model family */
+[data-family='claude'] {
+  --accent: var(--family-claude);
+  --accent-soft: var(--family-claude-soft);
+  --accent-border: var(--family-claude-border);
+}
+
+[data-family='gemini'] {
+  --accent: var(--family-gemini);
+  --accent-soft: var(--family-gemini-soft);
+  --accent-border: var(--family-gemini-border);
+}
+
+[data-family='gpt'] {
+  --accent: var(--family-gpt);
+  --accent-soft: var(--family-gpt-soft);
+  --accent-border: var(--family-gpt-border);
+}
+
+:root {
+  --font-sans: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-mid: 220ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

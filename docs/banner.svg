@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220" fill="none">
+  <rect width="960" height="220" rx="18" fill="#141415"/>
+  <rect x="1" y="1" width="958" height="218" rx="17" stroke="#2E2E32" stroke-width="2"/>
+
+  <!-- Geometric mark -->
+  <rect x="44" y="54" width="112" height="112" rx="24" fill="#19191B" stroke="#F59E0B" stroke-width="4"/>
+  <path d="M72 86L96 110L72 134" stroke="#EDEDED" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 134H132" stroke="#F59E0B" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Title -->
+  <text x="184" y="104" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="44" font-weight="700" fill="#EDEDED">
+    Prompt <tspan fill="#F59E0B">Forge</tspan>
+  </text>
+
+  <!-- Subtitle with model family colors -->
+  <text x="184" y="142" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="19" font-weight="500" fill="#A1A1A6">
+    Offline prompt compiler for
+    <tspan fill="#F59E0B" font-weight="600">Claude</tspan>,
+    <tspan fill="#38BDF8" font-weight="600">Gemini</tspan>, and
+    <tspan fill="#34D399" font-weight="600">GPT</tspan>
+  </text>
+
+  <!-- Feature pills -->
+  <rect x="184" y="158" width="128" height="28" rx="6" fill="#1F2922" stroke="#34D399" stroke-opacity="0.45"/>
+  <text x="248" y="177" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#34D399">100% OFFLINE</text>
+
+  <rect x="322" y="158" width="110" height="28" rx="6" fill="#1A2430" stroke="#38BDF8" stroke-opacity="0.45"/>
+  <text x="377" y="177" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#38BDF8">ZERO APIs</text>
+
+  <rect x="442" y="158" width="166" height="28" rx="6" fill="#292116" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <text x="525" y="177" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#F59E0B">PORTABLE SKILLS</text>
+
+  <text x="916" y="177" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#85858B">by JRB</text>
+</svg>
